@@ -1,6 +1,6 @@
 {
   "name": "ak_storybook",
-  "version": "1.0.1-beta.0",
+  "version": "1.0.1-beta.1",
   "description": "Storybook project with TypeScript and Vite support",
   "main": "index.js",
   "scripts": {
