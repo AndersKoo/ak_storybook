@@ -1,16 +1,46 @@
 {
   "name": "ak_storybook",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.0",
+  "description": "Storybook project with TypeScript and Vite support",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepublishOnly": "npm run build-storybook"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "storybook",
+    "react",
+    "typescript",
+    "vite",
+    "component-library"
+  ],
+  "author": "Anders",
   "license": "ISC",
-  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndersKoo/ak_storybook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndersKoo/ak_storybook/issues"
+  },
+  "homepage": "https://github.com/AndersKoo/ak_storybook#readme",
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=8.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "stories",
+    ".storybook",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "devDependencies": {
     "@chromatic-com/storybook": "^4.1.1",
     "@storybook/addon-a11y": "^9.1.3",
