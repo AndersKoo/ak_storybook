@@ -18,7 +18,7 @@ const config = {
     "options": {}
   },
   "viteFinal": async (config) => {
-    // Configure Vite for optimal chunking
+    // Configure Vite for optimal chunking and SCSS support
     if (config.build) {
       config.build.rollupOptions = {
         ...config.build.rollupOptions,
@@ -100,14 +100,15 @@ const config = {
         pure: ['console.log', 'console.warn', 'console.error']
       };
       
-      // Alternative: Use terser for more aggressive minification if needed
-      // config.build.minify = 'terser';
-      // config.build.terserOptions = {
-      //   compress: {
-      //     drop_console: true,
-      //     drop_debugger: true
-      //   }
-      // };
+    }
+    
+    // Add SCSS support
+    if (config.css) {
+      config.css.preprocessorOptions = {
+        scss: {
+          additionalData: `@use "src/styles/variables" as *;`
+        }
+      };
     }
     
     return config;

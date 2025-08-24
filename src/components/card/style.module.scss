@@ -1,0 +1,95 @@
+// Card component styles
+.storybook-card {
+  border-radius: 8px;
+  padding: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #e1e5e9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Variant styles
+.storybook-card--default {
+  background-color: #ffffff;
+  border: 1px solid #e1e5e9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.storybook-card--elevated {
+  background-color: #ffffff;
+  border: 1px solid #e1e5e9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.storybook-card--outlined {
+  background-color: transparent;
+  border: 2px solid #007acc;
+  box-shadow: none;
+}
+
+// Size styles
+.storybook-card--small {
+  padding: 12px;
+}
+
+.storybook-card--medium {
+  padding: 16px;
+}
+
+.storybook-card--large {
+  padding: 24px;
+}
+
+// Element styles
+.storybook-card__image {
+  margin-bottom: 16px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.storybook-card__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.storybook-card__content {
+  // Content container
+}
+
+.storybook-card__title {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.storybook-card__body {
+  color: #666666;
+  line-height: 1.5;
+}
+
+// Responsive adjustments
+@media (min-width: 768px) {
+  .storybook-card {
+    padding: 20px;
+  }
+  
+  .storybook-card--large {
+    padding: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .storybook-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

@@ -22,14 +22,17 @@
     "paths": {
       "@/*": ["./*"],
       "@stories/*": ["./stories/*"],
-      "@components/*": ["./stories/*"]
+      "@components/*": ["./src/components/*"],
+      "@types/*": ["./src/types/*"]
     }
   },
   "include": [
     "stories/**/*",
     ".storybook/**/*",
+    "src/**/*",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "**/*.d.ts"
   ],
   "exclude": [
     "node_modules",
