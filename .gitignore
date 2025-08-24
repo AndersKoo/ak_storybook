@@ -11,6 +11,10 @@ build
 .storybook-static
 storybook-static
 
+# TypeScript
+*.tsbuildinfo
+.tscache
+
 # Environment variables
 .env
 .env.local

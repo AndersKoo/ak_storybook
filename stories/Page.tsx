@@ -1,10 +1,10 @@
 import React from 'react';
-
 import { Header } from './Header';
+import { HeaderProps } from './types';
 import './page.css';
 
-export const Page = () => {
-  const [user, setUser] = React.useState();
+export const Page: React.FC = () => {
+  const [user, setUser] = React.useState<HeaderProps['user']>();
 
   return (
     <article>
